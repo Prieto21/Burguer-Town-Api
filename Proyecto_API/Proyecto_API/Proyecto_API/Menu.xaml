@@ -6,10 +6,46 @@
              mc:Ignorable="d"
              x:Class="Proyecto_API.Menu">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+
+            <Grid BackgroundColor="Black">
+
+                <Image Source="logooo.jpg" Aspect="AspectFit"/>
+                <BoxView Opacity="0.7" Color="Black"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+
+                    </Grid.RowDefinitions>
+                    
+                    <ListView x:Name="burguer">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="30">
+                                        <StackLayout  Grid.Column="0" Grid.Row="0">
+                                            <Label Text="{Binding nombre}" TextColor="White" HorizontalOptions="Center"/>
+                                        <Image Source="{Binding imagen}" VerticalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding valor}" TextColor="White"/>
+                                        <ImageButton Source="carrito.png" 
+                                         BackgroundColor="Goldenrod"
+                                         CornerRadius="50"  HeightRequest="30" />
+
+                                        </StackLayout>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    
+                </Grid>
+
+            </Grid>
+
+        </ScrollView>
+
+
     </ContentPage.Content>
 </ContentPage>
