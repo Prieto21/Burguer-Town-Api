@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Proyecto_API.perfil">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black">
+
+            <Image Source="logooo.jpg" Aspect="AspectFit"/>
+            <BoxView Opacity="0.7" Color="Black"/>
+
+            <Grid Padding="15">
+                <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="50">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                        <ListView x:Name="infousu">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout>
+                                            <Label Text="Perfil" HorizontalOptions="Center" TextColor="White" FontSize="25"/>
+                                            <Image Source="{Binding imagen}" HeightRequest="200"/>
+                                            <Label Text="Nombre:" TextColor="White" FontSize="15"/>
+                                            <Label Text="{Binding nombre}" TextColor="White" FontSize="15"/>
+                                            <Label Text="Apellido:" TextColor="White" FontSize="15"/>
+                                            <Label Text="{Binding apellido}" TextColor="White" FontSize="15"/>
+                                            <Label Text="Usuario:" TextColor="White" FontSize="15"/>
+                                            <Label Text="{Binding user}" TextColor="White" FontSize="15"/>
+                                            <Label Text="Contraseña:" TextColor="White" FontSize="15"/>
+                                            <Label Text="{Binding pass}" TextColor="White" FontSize="15"/>
+                                            <Label Text="Direccion:" TextColor="White" FontSize="15"/>
+                                            <Label Text="{Binding direccion}" TextColor="White" FontSize="15"/>
+                                            <Button Text="Editar" BackgroundColor="Transparent" TextColor="White" BorderColor="White" BorderWidth="1"
+                        CornerRadius="20" FontSize="Small" x:Name="btnEditar" Clicked="btnEditar_Clicked"/>
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </Frame>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
