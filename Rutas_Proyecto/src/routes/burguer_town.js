@@ -32,5 +32,11 @@ router.get('/cancel', async (req, res) => {
   res.json(cancel);
 });
 
+// Carrito de compra
+router.get('/carrito', async (req, res) => {
+  const cars = await pool.query('SELECT p.nombre , p.imagen FROM carrito c, productos p, usuario u WHERE c.id_producto = p.id_producto AND u.id_usuario = c.id_usuario AND u.id_usuario = 5;');
+  res.json(cars);
+});
+
 
 module.exports = router;
