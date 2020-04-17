@@ -10,16 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Proyecto_API
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Inicio : ContentPage
+    public partial class contiene : MasterDetailPage
     {
-        public Inicio()
+        public contiene()
         {
             InitializeComponent();
-        }
+            this.Master = new master();
+            this.Detail = new NavigationPage(new Menu());
 
-        private async void btnMenu_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new contiene());
+            App.MasterD = this;
         }
     }
 }
