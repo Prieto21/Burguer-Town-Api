@@ -5,8 +5,8 @@ app.set('port', process.env.PORT||3000);
 
 app.use(express.json());
 
-app.use('/api/yuju',require('./routes/taller'));
+app.use('/api/burguer',require('./routes/burguer_town'));
 
 app.listen(app.get('port'), () => {
-    console.log('vamos a emular', app.get('port'));
+    console.log('Burguer Town Servidor Activado', app.get('port'));
 });
