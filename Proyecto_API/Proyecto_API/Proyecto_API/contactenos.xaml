@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Proyecto_API.contactenos">
+    <ContentPage.Content>
+
+        <Grid BackgroundColor="Black">
+
+            <Image Source="logooo.jpg" Aspect="AspectFit"/>
+            <BoxView Opacity="0.7" Color="Black"/>
+
+            <Grid>
+                <StackLayout Spacing="10" Padding="10" HorizontalOptions="Center" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+                    <Label Text="Burguer Town" TextColor="White" FontSize="45" HorizontalOptions="Center"/>
+                    <Label Text="---------------------------------------------------------------------------" TextColor="White" HorizontalOptions="Center"/>
+                    <Label Text="Somos una Empresa dedicada a la comercialización y distribución de felicidad para nuestros clientes."
+                           TextColor="White" FontSize="17" HorizontalOptions="Center"/>
+                    <Label Text="Misión"
+                           TextColor="White" FontSize="25" HorizontalOptions="Center"/>
+                    <Label Text="Ser la mejor opción en comida para nuestros clientes, enfocándonos siempre en calidad, precio y tiempo de entrega."
+                           TextColor="White" FontSize="17" HorizontalOptions="Center"/>
+                    <Label Text="Visión"
+                           TextColor="White" FontSize="25" HorizontalOptions="Center"/>
+                    <Label Text="Ser una empresa lider en nuestro mundo gastronomico"
+                           TextColor="White" FontSize="17" HorizontalOptions="Center"/>
+                    <Label Text=""/>
+                    <Label Text=""/>
+                    <Label Text=""/>
+                    <Label Text=""/>
+                    <Label Text=""/>
+
+
+
+                </StackLayout>
+
+                <StackLayout VerticalOptions="End" Spacing="10" Padding="10">
+                    <Label Text="Redes Sociales" FontSize="16" TextColor="White" HorizontalOptions="End"/>
+                    <Label Text="---------------------------------------------------------------------------" TextColor="White" HorizontalOptions="Center"/>
+
+                    <Image Source="wha.png" HeightRequest="60"  HorizontalOptions="End" VerticalOptions="Start"/>
+
+                </StackLayout>
+                <StackLayout VerticalOptions="End" Spacing="10" Padding="10">
+                    <Image Source="face.png" HeightRequest="50"  HorizontalOptions="Center" VerticalOptions="Start"/>
+
+                </StackLayout>
+                <StackLayout VerticalOptions="End" Spacing="10" Padding="10" >
+                    <Image Source="inst.webp" HeightRequest="55"  HorizontalOptions="Start" VerticalOptions="Start"/>
+
+                </StackLayout>
+
+
+
+
+
+
+
+
+
+            </Grid>
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
