@@ -25,6 +25,9 @@
                 <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="20" Padding="10">
                     <Button Text="¿Quienes Somos?" x:Name="btnQuienes" Clicked="btnQuienes_Clicked" BackgroundColor="Transparent" TextColor="White"/>
                 </Frame>
+                <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="20" Padding="10">
+                    <Button Text="Administrador" x:Name="btnAdmin" Clicked="btnAdmin_Clicked" BackgroundColor="Transparent" TextColor="White"/>
+                </Frame>
 
 
                 <Label Text="App Creada Por Sergio Prieto" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand" TextColor="White"/>

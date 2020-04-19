@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Proyecto_API.administrador">
+             x:Class="Proyecto_API.cancelados">
     <ContentPage.Content>
         <ScrollView>
 
@@ -21,16 +21,17 @@
                         <RowDefinition Height="auto"/>
 
                     </Grid.RowDefinitions>
+             
                     <StackLayout Grid.Column="0" Grid.Row="0">
-                        <Label Text="PEDIDOS ACTIVOS" TextColor="White" HorizontalOptions="Center" FontSize="20"/>
+                        <Label Text="PEDIDOS CANCELADOS" TextColor="White" HorizontalOptions="Center" FontSize="20"/>
                     </StackLayout>
-                    
-                    <ListView x:Name="activo">
+
+                    <ListView x:Name="cancelado">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
                                     <Frame Grid.Column="0" Grid.Row="1" BackgroundColor="Transparent" BorderColor="White" CornerRadius="30">
-                                            <StackLayout>
+                                        <StackLayout>
                                             <Image Source="{Binding imagen}" HeightRequest="50"/>
                                             <Label Text="Producto:" TextColor="White" FontSize="15"/>
                                             <Label Text="{Binding producto}" TextColor="White" FontSize="15"/>
@@ -50,14 +51,14 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <StackLayout Grid.Column="0" Grid.Row="2">
-                        <Button x:Name="btnCancelados" Text="Pedidos Cancelados" Clicked="btnCancelados_Clicked" BackgroundColor="Transparent" TextColor="White" BorderColor="White" CornerRadius="30" BorderWidth="1"/>
-                    </StackLayout>
-                   
+
+
+
                 </Grid>
 
             </Grid>
 
         </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>

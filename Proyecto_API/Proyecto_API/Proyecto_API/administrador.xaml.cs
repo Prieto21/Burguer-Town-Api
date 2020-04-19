@@ -18,16 +18,10 @@ namespace Proyecto_API
         {
             InitializeComponent();
             GetpedidosActivos();
-            GetpedidosCancelados();
+            
         }
 
-        private async void GetpedidosCancelados()
-        {
-            HttpClient client = new HttpClient();
-            var pediC = await client.GetStringAsync("http://localhost:3000/api/burguer/cancel");
-            var cancel = JsonConvert.DeserializeObject<List<estadoo>>(pediC);
-            cancelado.ItemsSource = cancel;
-        }
+  
 
         private async void GetpedidosActivos()
         {
@@ -35,6 +29,12 @@ namespace Proyecto_API
             var pediA = await client.GetStringAsync("http://localhost:3000/api/burguer/activos");
             var activados = JsonConvert.DeserializeObject<List<estadoo>>(pediA);
             activo.ItemsSource = activados;
+        }
+
+        private async void btnCancelados_Clicked(object sender, EventArgs e)
+        {
+            App.MasterD.IsPresented = false;
+            await App.MasterD.Detail.Navigation.PushAsync(new cancelados());
         }
     }
 }

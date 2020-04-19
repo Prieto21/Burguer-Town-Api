@@ -41,5 +41,11 @@ namespace Proyecto_API
             App.MasterD.IsPresented = false;
             await App.MasterD.Detail.Navigation.PushAsync(new contactenos());
         }
+
+        private async void btnAdmin_Clicked(object sender, EventArgs e)
+        {
+            App.MasterD.IsPresented = false;
+            await App.MasterD.Detail.Navigation.PushAsync(new administrador());
+        }
     }
 }
