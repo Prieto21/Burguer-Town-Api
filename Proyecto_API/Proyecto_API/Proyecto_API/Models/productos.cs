@@ -8,6 +8,8 @@ namespace Proyecto_API
     {
         public string nombre { get; set; }
         public string imagen { get; set; }
-        public string valor { get; set; }
+        public string descripcion { get; set; }
+        public string id_clasificacion { get; set; }
+
     }
 }

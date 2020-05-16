@@ -10,8 +10,7 @@ namespace Proyecto_API
         public string apellido { get; set; }
         public string user { get; set; }
         public string pass { get; set; }
-        public string direccion { get; set; }
-        public string imagen { get; set; }
+    
 
     }
 }

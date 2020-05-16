@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Proyecto_API.LoginPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black">
+
+            <Image Source="logooo.jpg" Aspect="AspectFit"/>
+            <BoxView Opacity="0.7" Color="Black"/>
+
+            <Grid Padding="15">
+                <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="50">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                        <Label Text="Burguer Town" TextColor="White" FontSize="45" HorizontalOptions="Center" VerticalOptions="Fill"/>
+                        <Entry Placeholder="Ingrese usuario" PlaceholderColor="White" TextColor="White" BackgroundColor="Transparent"/>
+                        
+                        
+                            <Entry Placeholder="Ingrese Contraseña" IsPassword="True" TextColor="White" PlaceholderColor="White" BackgroundColor="Transparent"/>
+
+                        <Button x:Name="btn_usuario" Clicked="btn_usuario_Clicked" Text="Entrar"
+                                BackgroundColor="Black" 
+                TextColor="White"
+            BorderColor="White" 
+            BorderWidth="1"
+            CornerRadius="10"
+                HorizontalOptions="Center"/>
+                        <Button x:Name="btn_agregarUsu" Clicked="btn_agregarUsu_Clicked" Text="Registrarme"
+                                BackgroundColor="Black" 
+                TextColor="White"
+            BorderColor="White" 
+            BorderWidth="1"
+            CornerRadius="10"
+                HorizontalOptions="Center"/>
+                        <Button Text="A"   VerticalOptions="EndAndExpand"
+                                x:Name="btn_administrador" Clicked="btn_administrador_Clicked"/>
+                    </StackLayout>
+                    
+                        
+                    
+                </Frame>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

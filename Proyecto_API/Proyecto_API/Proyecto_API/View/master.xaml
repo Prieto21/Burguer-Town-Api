@@ -14,19 +14,20 @@
         <Grid>
             <StackLayout Orientation="Vertical" Padding="5" BackgroundColor="Transparent">
                 <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="20" Padding="10">
-                    <Button Text="Perfil" x:Name="btnPerfil" Clicked="btnPerfil_Clicked" BackgroundColor="Transparent" TextColor="White"/>
+                    <Button Text="Usuarios" x:Name="btnPerfil" Clicked="btnPerfil_Clicked" BackgroundColor="Transparent" TextColor="White"/>
                 </Frame>
                 <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="20" Padding="10">
                     <Button Text="Bebidas" x:Name="bntBebida" Clicked="bntBebida_Clicked" BackgroundColor="Transparent" TextColor="White"/>
                 </Frame>
                 <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="20" Padding="10">
-                    <ImageButton Source="carrito.png" x:Name="btnCarrito" Clicked="btnCarrito_Clicked" BackgroundColor="Transparent" HeightRequest="44"/>
+                    <Button Text="Comidas" x:Name="btnHambur" Clicked="btnHambur_Clicked" BackgroundColor="Transparent" TextColor="White"/>
                 </Frame>
                 <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="20" Padding="10">
-                    <Button Text="¿Quienes Somos?" x:Name="btnQuienes" Clicked="btnQuienes_Clicked" BackgroundColor="Transparent" TextColor="White"/>
+                    <Button Text="Nuevo Producto" x:Name="btnNewProduct" Clicked="btnNewProduct_Clicked" BackgroundColor="Transparent" TextColor="White"/>
                 </Frame>
-                <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="20" Padding="10">
-                    <Button Text="Administrador" x:Name="btnAdmin" Clicked="btnAdmin_Clicked" BackgroundColor="Transparent" TextColor="White"/>
+             
+                <Frame BackgroundColor="Transparent" BorderColor="Red" CornerRadius="20" Padding="10">
+                    <Button Text="Salir" x:Name="btnSalir" Clicked="btnSalir_Clicked" BackgroundColor="Transparent" TextColor="Red"/>
                 </Frame>
 
 

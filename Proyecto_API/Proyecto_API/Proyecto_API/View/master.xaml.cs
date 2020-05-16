@@ -30,22 +30,26 @@ namespace Proyecto_API
             await App.MasterD.Detail.Navigation.PushAsync(new bebidas());
         }
 
-        private async void btnCarrito_Clicked(object sender, EventArgs e)
+
+
+
+        private async void btnSalir_Clicked(object sender, EventArgs e)
         {
-            App.MasterD.IsPresented = false;
-            await App.MasterD.Detail.Navigation.PushAsync(new carrito());
+            await Navigation.PushAsync(new Inicio());
         }
 
-        private async void btnQuienes_Clicked(object sender, EventArgs e)
+        private async void btnHambur_Clicked(object sender, EventArgs e)
         {
             App.MasterD.IsPresented = false;
-            await App.MasterD.Detail.Navigation.PushAsync(new contactenos());
+            await App.MasterD.Detail.Navigation.PushAsync(new Menu());
         }
 
-        private async void btnAdmin_Clicked(object sender, EventArgs e)
+     
+
+        private async void btnNewProduct_Clicked(object sender, EventArgs e)
         {
             App.MasterD.IsPresented = false;
-            await App.MasterD.Detail.Navigation.PushAsync(new administrador());
+            await App.MasterD.Detail.Navigation.PushAsync(new NewProductPage());
         }
     }
 }

@@ -28,10 +28,9 @@
                                         <StackLayout  Grid.Column="0" Grid.Row="0">
                                             <Label Text="{Binding nombre}" TextColor="White" HorizontalOptions="Center"/>
                                         <Image Source="{Binding imagen}" VerticalOptions="CenterAndExpand"/>
-                                        <Label Text="{Binding valor}" TextColor="White"/>
-                                        <ImageButton Source="carrito.png" 
-                                         BackgroundColor="Goldenrod"
-                                         CornerRadius="50"  HeightRequest="30" />
+                                            <Label Text="Receta:" TextColor="White" HorizontalOptions="Center"/>
+                                            <Label Text="{Binding descripcion}" TextColor="White"/>
+                                        
 
                                         </StackLayout>
                                     </Frame>

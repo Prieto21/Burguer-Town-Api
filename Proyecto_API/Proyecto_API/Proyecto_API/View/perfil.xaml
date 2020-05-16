@@ -12,16 +12,20 @@
             <BoxView Opacity="0.7" Color="Black"/>
 
             <Grid Padding="15">
+                <StackLayout>
+                    <Label Text="Usuarios" HorizontalOptions="Center" TextColor="White" FontSize="25"/>
+                </StackLayout>
                 <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="50">
                     <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
                         <ListView x:Name="infousu">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
-                                        <StackLayout>
-                                            <Label Text="Perfil" HorizontalOptions="Center" TextColor="White" FontSize="25"/>
-                                            <Image Source="{Binding imagen}" HeightRequest="200"/>
-                                            <Label Text="Nombre:" TextColor="White" FontSize="15"/>
+                                        <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="30">
+                                            <StackLayout BackgroundColor="Transparent">
+                                            
+
+                                                <Label Text="Nombre:" TextColor="White" FontSize="15"/>
                                             <Label Text="{Binding nombre}" TextColor="White" FontSize="15"/>
                                             <Label Text="Apellido:" TextColor="White" FontSize="15"/>
                                             <Label Text="{Binding apellido}" TextColor="White" FontSize="15"/>
@@ -29,11 +33,9 @@
                                             <Label Text="{Binding user}" TextColor="White" FontSize="15"/>
                                             <Label Text="Contraseña:" TextColor="White" FontSize="15"/>
                                             <Label Text="{Binding pass}" TextColor="White" FontSize="15"/>
-                                            <Label Text="Direccion:" TextColor="White" FontSize="15"/>
-                                            <Label Text="{Binding direccion}" TextColor="White" FontSize="15"/>
-                                            <Button Text="Editar" BackgroundColor="Transparent" TextColor="White" BorderColor="White" BorderWidth="1"
-                        CornerRadius="20" FontSize="Small" x:Name="btnEditar" Clicked="btnEditar_Clicked"/>
+                                            
                                         </StackLayout>
+                                        </Frame>
                                     </ViewCell>
                                 </DataTemplate>
                             </ListView.ItemTemplate>

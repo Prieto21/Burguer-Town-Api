@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Proyecto_API.NewProductPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black">
+
+            <Image Source="logooo.jpg" Aspect="AspectFit"/>
+            <BoxView Opacity="0.7" Color="Black"/>
+
+            <Grid Padding="15">
+                <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="50">
+                    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                        <Label Text="Burguer Town" TextColor="White" FontSize="45" HorizontalOptions="Center" VerticalOptions="Fill"/>
+                        <Label Text="Nuevo Producto" TextColor="White" FontSize="25" HorizontalOptions="Center" VerticalOptions="Fill"/>
+                        <Entry x:Name="nombre" Placeholder="Ingrese Nombre" PlaceholderColor="White" TextColor="White" BackgroundColor="Transparent"/>
+                        <Entry x:Name="imagen" Placeholder="Nombre De Imagen" PlaceholderColor="White" TextColor="White" BackgroundColor="Transparent"/>
+                        <Entry x:Name="descripcion" Placeholder="Descripcion" PlaceholderColor="White" TextColor="White" BackgroundColor="Transparent"/>
+                        <Entry x:Name="clasificacion" Placeholder="Clasificacion" PlaceholderColor="White" TextColor="White" BackgroundColor="Transparent"/>
+                        <Label Text="Id clasificacion:1 = Comidas / 2 = Bebidas" TextColor="White" FontSize="10"/>
+                        <Button x:Name="btn_agregar"  Text="Agregar"
+                                Clicked="btn_agregar_Clicked"
+                                BackgroundColor="Black" 
+                TextColor="White"
+            BorderColor="White" 
+            BorderWidth="1"
+            CornerRadius="10"
+                HorizontalOptions="Center"/>
+                        
+
+                    </StackLayout>
+
+
+
+                </Frame>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

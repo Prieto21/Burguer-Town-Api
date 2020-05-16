@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Proyecto_API.carrito">
+             x:Class="Proyecto_API.IlusionPage">
     <ContentPage.Content>
         <ScrollView>
 
@@ -17,18 +17,28 @@
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto"/>
                         <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
 
                     </Grid.RowDefinitions>
-
-                    <ListView x:Name="carro">
+                    <StackLayout Grid.Column="0" Grid.Row="0">
+                        <Button Text="Bebidas" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Goldenrod" 
+                            BorderWidth="1" TextColor="White" x:Name="btn_ilusionDos" Clicked="btn_ilusionDos_Clicked"/>
+                        <Button Text="¿Quienes Somos?" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Goldenrod" 
+                            BorderWidth="1" TextColor="White" x:Name="btn_somos" Clicked="btn_somos_Clicked"/>
+                        <Button Text="Salir" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Red" 
+                            BorderWidth="1" TextColor="Red" x:Name="btn_salir" Clicked="btn_salir_Clicked"/>
+                    
+                    </StackLayout>
+                    <ListView x:Name="burguer" Grid.Column="1" Grid.Row="0">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
                                     <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="30">
-                                        <StackLayout  Grid.Column="0" Grid.Row="0">
+                                        <StackLayout  >
                                             <Label Text="{Binding nombre}" TextColor="White" HorizontalOptions="Center"/>
                                             <Image Source="{Binding imagen}" VerticalOptions="CenterAndExpand"/>
-                                            <Entry Placeholder="Ingrese la cantidad" BackgroundColor="White" Keyboard="Numeric"  HeightRequest="40"/>
+                                            <Label Text="Receta:" TextColor="White" HorizontalOptions="Center"/>
+                                            <Label Text="{Binding descripcion}" TextColor="White"/>
 
                                         </StackLayout>
                                     </Frame>
@@ -40,6 +50,8 @@
                 </Grid>
 
             </Grid>
+
         </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>

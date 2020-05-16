@@ -13,9 +13,24 @@
             <BoxView Opacity="0.7" Color="Black"/>
 
             <Grid>
-                <StackLayout Spacing="10" Padding="10" HorizontalOptions="Center" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Column="0" Grid.Row="0">
+                    <Button Text="Bebidas" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Goldenrod" 
+                            BorderWidth="1" TextColor="White" x:Name="btn_ilusionDos" Clicked="btn_ilusionDos_Clicked"/>
+                    <Button Text="Comidas" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Goldenrod" 
+                            BorderWidth="1" TextColor="White" x:Name="btn_comidas" Clicked="btn_comidas_Clicked"/>
+                    <Button Text="Salir" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Red" 
+                            BorderWidth="1" TextColor="Red" x:Name="btn_salir" Clicked="btn_salir_Clicked"/>
+
+                </StackLayout>
+                <StackLayout Grid.Column="1" Grid.Row="0" Spacing="10" Padding="10" HorizontalOptions="Center" VerticalOptions="FillAndExpand" BackgroundColor="Transparent">
                     <Label Text="Burguer Town" TextColor="White" FontSize="45" HorizontalOptions="Center"/>
-                    <Label Text="---------------------------------------------------------------------------" TextColor="White" HorizontalOptions="Center"/>
+                    <Label Text="-------------------------------------------------------------------" TextColor="White" HorizontalOptions="Center"/>
                     <Label Text="Somos una Empresa dedicada a la comercialización y distribución de felicidad para nuestros clientes."
                            TextColor="White" FontSize="17" HorizontalOptions="Center"/>
                     <Label Text="Misión"
@@ -36,22 +51,7 @@
 
                 </StackLayout>
 
-                <StackLayout VerticalOptions="End" Spacing="10" Padding="10">
-                    <Label Text="Redes Sociales" FontSize="16" TextColor="White" HorizontalOptions="End"/>
-                    <Label Text="---------------------------------------------------------------------------" TextColor="White" HorizontalOptions="Center"/>
-
-                    <Image Source="wha.png" HeightRequest="60"  HorizontalOptions="End" VerticalOptions="Start"/>
-
-                </StackLayout>
-                <StackLayout VerticalOptions="End" Spacing="10" Padding="10">
-                    <Image Source="face.png" HeightRequest="50"  HorizontalOptions="Center" VerticalOptions="Start"/>
-
-                </StackLayout>
-                <StackLayout VerticalOptions="End" Spacing="10" Padding="10" >
-                    <Image Source="inst.webp" HeightRequest="55"  HorizontalOptions="Start" VerticalOptions="Start"/>
-
-                </StackLayout>
-
+             
 
 
 

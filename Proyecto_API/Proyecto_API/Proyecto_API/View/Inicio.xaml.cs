@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace Proyecto_API
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class contactenos : ContentPage
+    public partial class Inicio : ContentPage
     {
-        public contactenos()
+        public Inicio()
         {
             InitializeComponent();
+        }
+
+        private async void btnMenu_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoginPage());
         }
     }
 }

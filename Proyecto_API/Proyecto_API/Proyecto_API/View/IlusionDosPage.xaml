@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Proyecto_API.IlusionDosPage">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Grid BackgroundColor="Black">
+
+                <Image Source="logooo.jpg" Aspect="AspectFit"/>
+                <BoxView Opacity="0.7" Color="Black"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Column="0" Grid.Row="0">
+                        <Button Text="Comidas" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Goldenrod" 
+                            BorderWidth="1" TextColor="White" x:Name="btn_ilusion" Clicked="btn_ilusion_Clicked"/>
+                        <Button Text="¿Quienes Somos?" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Goldenrod" 
+                            BorderWidth="1" TextColor="White" x:Name="btn_somos" Clicked="btn_somos_Clicked"/>
+                        <Button Text="Salir" BackgroundColor="Transparent" CornerRadius="10" BorderColor="Red" 
+                            BorderWidth="1" TextColor="Red" x:Name="btn_salir" Clicked="btn_salir_Clicked"/>
+
+                    </StackLayout>
+                    <ListView x:Name="bebida" Grid.Column="1" Grid.Row="0">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Frame BackgroundColor="Transparent" BorderColor="White" CornerRadius="30">
+                                        <StackLayout  Grid.Column="0" Grid.Row="0">
+                                            <Label Text="{Binding nombre}" TextColor="White" HorizontalOptions="Center"/>
+                                            <Image Source="{Binding imagen}" VerticalOptions="CenterAndExpand"/>
+                                            <Label Text="Receta:" TextColor="White" HorizontalOptions="Center"/>
+                                            <Label Text="{Binding descripcion}" TextColor="White"/>
+
+                                        </StackLayout>
+                                    </Frame>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </Grid>
+
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
